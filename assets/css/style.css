@@ -98,12 +98,12 @@ section.main span {
 section.main p {
     position: relative;
     top: 50%;
-    border-right: 2px solid rgba(255, 255, 255, .75);
+    /*border-right: 2px solid rgba(255, 255, 255, .75);*/
     white-space: nowrap;
     overflow: hidden;
     color: #94a1b2;
     font-size: 13px;
-    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 530ms steps(44) infinite normal;
+    /*animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 530ms steps(44) infinite normal;*/
 }
 
 section.main ul {
@@ -127,42 +127,4 @@ section.main ul li a {
 section.main ul li a:hover {
     transition: 0.2s all;
     color: #fff;
-}
-
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-    to {
-        width: 20.5em;
-    }
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
-    }
-    to {
-        border-right-color: transparent;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translate3d(0, 150px, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        transform: translate3d(0, -150px, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
 }
